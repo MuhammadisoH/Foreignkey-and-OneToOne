@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="post" class="absolute top-1/2 left-1/2" style="transform: translate(-50%, -50%)">
+    {% csrf_token %}
+    <div class="flex flex-col">
+        <label class="text-3xl" for="email">Username</label>
+        <input required class="border border-slate-900 max-w-[300px]" type="email" name="email" id="email">
+    </div>
+    <div class="flex flex-col">
+        <label class="text-3xl" for="password">Parol</label>
+        <input required class="border border-slate-900 max-w-[300px]" type="password" name="password" id="password">
+    </div>
+    <p>
+        Akkauntingiz yo'qmi ? <a class="text-blue-600" href="">Ro'yxatdan o'ting</a>
+    </p>
+    <button class="mt-2 p-2 border rounded bg-blue-600 text-center w-full text-white" type="submit">Kirish</button>
+</form>
+{% endblock content %}
