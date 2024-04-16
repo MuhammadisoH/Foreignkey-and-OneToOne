@@ -31,7 +31,7 @@ python manage.py makemigraionts
 
 Migrate all migrations
 ```python
-python manage.py makemigraionts
+python manage.py migrate
 ```
 
 Run development server
