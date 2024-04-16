@@ -2,22 +2,15 @@
 
 
 Create virutal environment
-```python
-# Windows
+```
 python -m venv venv
-
-# MacOS / Linux
-python3 -m venv venv
 ```
 
 Activate virutal environment
-```python
-# Windows
-venv\Scripts\Activate
-
-# MacOS / Linux
-source venv\bin\activate
 ```
+venv\Scripts\Activate
+```
+
 
 Install dependencies
 ```python
