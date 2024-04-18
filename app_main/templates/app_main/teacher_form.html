@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <label for="first_name">First name</label>
+            <input name="first_name" id="first_name" type="text" value="{{ teacher.first_name }}">
+        </div>
+        <div>
+            <label for="last_name">Last name</label>
+            <input name="last_name" id="last_name" type="text" value="{{ teacher.last_name }}">
+        </div>
+        <div>
+            <label for="username">Username</label>
+            <input name="username" id="username" type="text" value="{{ teacher.username }}">
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input name="email" id="email" type="email" value="{{ teacher.email }}">
+        </div>
+        <div>
+            <label for="password1">Password</label>
+            <input name="password1" id="password1" type="password">
+        </div>
+        <div>
+            <label for="password2">Password confirmation</label>
+            <input name="password2" id="password2" type="password">
+        </div>
+        <button type="submit">Ro'yxatga olish</button>
+    </form>
+{% endblock content %}
