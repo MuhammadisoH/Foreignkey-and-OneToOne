@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h3>{{ teacher }} ning o'quvchilari:</h3>
+    {% for student in students %}
+        <p>
+            {{ student.first_name }} {{ student.last_name }} -
+            {% if student.book %}
+                {{ student.book.title }}
+            {% else %}
+                Kitobi yo'q
+            {% endif %}
+        </p>
+    {% endfor %}
+
+{% endblock content %}
